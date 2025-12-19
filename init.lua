@@ -48,7 +48,7 @@ Kickstart Guide:
     If you don't know what this means, type the following:
       - <escape key>
       - :
-      - Tutor
+      - Tutors
       - <enter key>
 
     (If you already know the Neovim basics, you can skip this step.)
