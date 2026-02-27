@@ -102,7 +102,7 @@ vim.g.have_nerd_font = false
 vim.o.number = true
 -- You can also add relative line numbers, to help with jumping.
 --  Experiment for yourself to see if you like it!
--- vim.o.relativenumber = true
+vim.o.relativenumber = true
 
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.o.mouse = 'a'
@@ -287,6 +287,13 @@ require('lazy').setup({
         changedelete = { text = '~' }, ---@diagnostic disable-line: missing-fields
       },
     },
+  },
+
+  {
+    'nvim-neorg/neorg',
+    lazy = false, -- Disable lazy loading as some `lazy.nvim` distributions set `lazy = true` by default
+    version = '*', -- Pin Neorg to the latest stable release
+    config = true,
   },
 
   -- NOTE: Plugins can also be configured to run Lua code when they are loaded.
